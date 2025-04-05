@@ -1,4 +1,6 @@
+from helper import f
+
 for i in range(5):
-    print(i)
+    print(f(i))
 
 
