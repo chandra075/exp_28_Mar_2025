@@ -1,2 +1,3 @@
-def f(n):
-    return n+1
+def f(x):
+    return x+1
+
