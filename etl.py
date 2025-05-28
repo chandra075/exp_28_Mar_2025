@@ -7,6 +7,7 @@ spark = SparkSession.builder \
     .config("spark.hadoop.google.cloud.auth.service.account.enable", "true") \
     .getOrCreate()
 def pyspark_code():
+    # Read JSON data from Google Cloud Storage
     df_raw =  spark\
              .read\
              .json("gs://rawnclean/raw/2025-05-20/*.json", multiLine=True)
